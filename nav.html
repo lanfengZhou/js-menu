@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>树形菜单栏</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="nav.js"></script>
+	<style type="text/css">
+		.menu{
+			width: 200px;
+			height: 600px;
+			font-family: "微软雅黑";
+			font-weight: 500;
+			font-size: 18px;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+
+		}
+		ul li ul li li{
+			/*text-indent:30px;*/
+			/*list-style-type:square;*/
+			list-style-position: inside;
+			list-style-image:url("/img/file_14x14.png");
+			padding-left: 5px;
+			/*background: url("/img/file_14x14.png") no-repeat 10px center ;*/
+			/*padding-left: 20px;*/
+			cursor: pointer;
+		}
+		ul li,ul li ul li{
+			/*text-indent:8px;*/
+			list-style-position: inside;
+			list-style-image:url("/img/open_14x14.png");
+			
+			padding-left: 15px;
+			margin-top: 5px;
+			cursor: pointer;
+		}
+		ul li{
+			background: url("/img/line_conn.gif") 0 0 repeat-y;
+			background-position: 12px 5px;
+		}
+		ul li ul li ul li{
+			background: none
+		}
+		a{
+			text-decoration: none;
+			color: #000;
+		}
+	</style>
+</head>
+<body>
+	<div class="menu" id="menu">
+		<ul>
+			<li>
+				<a href="#" id="nav">导航栏</a>
+				<ul>
+					<li>
+						<a href="javascript:;" class="navlist">智能停车场</a>
+						<ul>
+							<li><a href="#">用户管理</a></li>
+							<li><a href="#">车位管理</a></li>
+							<li><a href="#">历史记录管理</a></li>
+							<li><a href="#">其他</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="navlist">ETC</a>
+						<ul>
+							<li><a href="#">用户管理</a></li>
+							<li><a href="#">车位管理</a></li>
+							<li><a href="#">历史记录管理</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="javascript:;" class="navlist">其他功能</a>
+						<ul>
+							<li><a href="#">用户管理</a></li>
+							<li><a href="#">车位管理</a></li>
+							<li><a href="#">历史记录管理</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">下一个</a>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>
